@@ -1,0 +1,7 @@
+{
+  "name": "nusrat-jahan-choity-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {"dev": "serve dist", "start": "serve dist"},
+  "devDependencies": {"serve": "^14.2.4"}
+}

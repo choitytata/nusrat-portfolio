@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#080810" />
+  <meta name="description" content="The interactive portfolio of Nusrat Jahan Choity—CSE student, AI explorer and full-stack developer in Dhaka." />
+  <title>Nusrat Jahan Choity | Interactive Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="hud"><a class="brand" href="#top">CHOITY.EXE <span>©26</span></a><div class="hud-right"><span>CHAPTER <b id="chapterCount">00</b>/05</span><span class="hp" aria-label="Three hearts remaining"><span id="heartDisplay">♥ ♥ ♥</span> <i></i></span></div></header>
+  <main id="top">
+    <section class="start-screen" id="start">
+      <div class="spark s1">✦</div><div class="spark s2">✧</div>
+      <p class="eyebrow">A PLAYABLE DEVELOPER PORTFOLIO</p>
+      <h1>CHOOSE YOUR<br><span>STORY GUIDE</span></h1>
+      <p class="intro">Style Remi’s outfit, then explore Choity’s journey in story mode or game mode.</p>
+      <div class="single-character">
+        <span class="portrait p3" role="img" aria-label="Remi, your pixel-art story guide"></span>
+        <b>REMI</b>
+        <small>YOUR STORY GUIDE</small>
+      </div>
+      <div class="outfit-selector">
+  <span class="step">01</span>
+
+  <div class="outfit-content">
+    <strong>CHOOSE YOUR OUTFIT</strong>
+
+    <div class="swatches outfit-options" role="radiogroup" aria-label="Choose an outfit">
+      <button
+        class="swatch outfit-choice pink active"
+        data-fit="pink"
+        aria-label="Pink outfit"
+        aria-checked="true"
+      >
+        PINK
+      </button>
+
+      <button
+        class="swatch outfit-choice mint"
+        data-fit="mint"
+        aria-label="Mint outfit"
+        aria-checked="false"
+      >
+        MINT
+      </button>
+
+      <button
+        class="swatch outfit-choice blue"
+        data-fit="blue"
+        aria-label="Blue outfit"
+        aria-checked="false"
+      >
+        BLUE
+      </button>
+    </div>
+  </div>
+</div>
+      <button id="startBtn" class="start-btn">START STORY <span>→</span></button>
+    </section>
+
+    <section class="story" id="story" aria-label="Portfolio story">
+      <nav class="chapter-nav" aria-label="Story chapters"><button data-target="about" class="active">01 / ORIGIN</button><button data-target="work">02 / WORK</button><button data-target="projects">03 / BUILDS</button><button data-target="wins">04 / WINS</button><button data-target="contact">05 / CONNECT</button></nav>
+      <article class="chapter origin" id="about" data-chapter="1">
+        <div class="chapter-tag">LEVEL 01 · PLAYER PROFILE</div>
+        <div class="comic-grid origin-grid">
+          <div class="panel hero-panel"><div class="guide-avatar p3" aria-hidden="true"></div><div class="speech"><span>Hey, player!</span>I’m your guide. Meet Choity: developer, researcher, editor, teacher—and collector of ambitious side quests.</div></div>
+          <div class="panel title-panel"><p>PLAYER ONE</p><h2>NUSRAT JAHAN<br><em>CHOITY.</em></h2><p class="role">CSE Student · AI Explorer · Full-Stack Developer</p></div>
+          <div class="panel copy-panel"><span class="burst">DHAKA, BD</span><p>A senior-year CSE student at BRAC University building practical software across full-stack web development, NLP, embedded systems and computer graphics. She also brings six years of teaching experience to every problem: explain clearly, test patiently, improve continuously.</p><div class="stats"><span><b>3.38</b> CGPA / 4.00</span><span><b>06</b> years teaching</span><span><b>2027</b> graduation</span></div><div class="skill-cloud"><span>Python</span><span>JavaScript</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>MySQL</span><span>NLP</span><span>Git</span></div></div>
+        </div>
+      </article>
+      <article class="chapter" id="work" data-chapter="2">
+        <div class="chapter-tag">LEVEL 02 · THE QUEST LOG</div>
+        <div class="chapter-heading"><div><p>EXPERIENCE</p><h2>WHERE THE<br>XP HAPPENED</h2></div><p>Code, quality, leadership and teaching—each chapter unlocked a different way to solve problems.</p></div>
+        <div class="timeline">
+          <button class="job active" data-job="0"><span>2025—PRESENT</span><b>Senior Editor & Team Leader</b><small>NoobFeed</small></button>
+          <button class="job" data-job="1"><span>2024—2025</span><b>IT Intern</b><small>PlanetHackBD</small></button>
+          <button class="job" data-job="2"><span>2020—PRESENT</span><b>Teacher</b><small>English-medium & English-version</small></button>
+          <button class="job" data-job="3"><span>SUBSTITUTE ROLE</span><b>Substitute Teacher</b><small>Holy Cross High Girls School</small></button>
+          <div class="job-detail panel" aria-live="polite"><span class="quest">CURRENT QUEST</span><h3 id="jobTitle">Senior Editor & Team Leader</h3><p id="jobCopy">Leads editorial workflows, improves technical articles for clarity and consistency, mentors writers and coordinates reviews across the team.</p><div id="jobLoot" class="loot"><span>Team leadership</span><span>Technical editing</span><span>Mentoring</span></div></div>
+        </div>
+      </article>
+      <article class="chapter" id="projects" data-chapter="3">
+        <div class="chapter-tag">LEVEL 03 · FEATURED BUILDS</div>
+        <div class="chapter-heading"><div><p>SOFTWARE + RESEARCH</p><h2>THE BUILD<br>ARCHIVE</h2></div></div>
+        <div class="missions">
+          <a class="mission pink-card" href="https://www.linkedin.com/posts/nusrat-jahan-choity-2035a824a_webdevelopment-mernstack-react-ugcPost-7502055479175483392-qa0y/" target="_blank" rel="noopener noreferrer"><div class="thumb"><img src="assets/projects/paradox.jpg" alt="Paradox project thumbnail" onerror="this.src='assets/thumbnail-placeholder.svg'"><span>PARADOX.JPG</span></div><span>MISSION 01 · FULL STACK</span><h3>Paradox</h3><p>Debate and tournament platform with rounds, standings, elimination brackets, archiving, authorization and responsive interfaces.</p><div class="tech">React · Chakra UI · Node · Express · MongoDB · JWT</div></a>
+          <a class="mission mint-card" href="https://shodai-ghor.vercel.app/login" target="_blank" rel="noopener noreferrer"><div class="thumb"><img src="assets/projects/shodai-ghor.jpg" alt="Shodai Ghor project thumbnail" onerror="this.src='assets/thumbnail-placeholder.svg'"><span>SHODAI-GHOR.JPG</span></div><span>MISSION 02 · E-COMMERCE</span><h3>Shodai Ghor</h3><p>A responsive full-stack fashion platform spanning frontend, backend APIs and database integration.</p><div class="tech">Node · Express · MongoDB · Bootstrap · JavaScript</div></a>
+          <a class="mission blue-card" href="https://www.linkedin.com/posts/nusrat-jahan-choity-2035a824a_embeddedsystems-esp32-iot-ugcPost-7499732267599237120-0dsl/" target="_blank" rel="noopener noreferrer"><div class="thumb"><img src="assets/projects/drain-sense.jpg" alt="DRAIN-SENSE project thumbnail" onerror="this.src='assets/thumbnail-placeholder.svg'"><span>DRAIN-SENSE.JPG</span></div><span>MISSION 03 · EMBEDDED</span><h3>DRAIN-SENSE</h3><p>An ESP32-powered system monitoring rainfall, water level, flow and turbidity in real time.</p><div class="tech">ESP32 · Sensors · Environmental monitoring</div></a>
+          <a class="mission blue-card" href="https://classi-paws-ar-xiv.vercel.app/" target="_blank" rel="noopener noreferrer"><div class="thumb"><img src="assets/projects/nlp-classifier.jpg" alt="NLP classifier project thumbnail" onerror="this.src='assets/thumbnail-placeholder.svg'"><span>NLP-CLASSIFIER.JPG</span></div><span>MISSION 04 · AI / NLP</span><h3>Scientific Discipline Classifier</h3><p>Multi-class classification of research-paper abstracts across scientific disciplines using NLP and ML fundamentals.</p><div class="tech">Python · NLTK · Pandas · NumPy · ML</div></a>
+          <a class="mission pink-card" href="#" target="_blank" rel="noopener noreferrer"><div class="thumb"><img src="assets/projects/social-navigation.jpg" alt="Social navigation research thumbnail" onerror="this.src='assets/thumbnail-placeholder.svg'"><span>SOCIAL-NAVIGATION.JPG</span></div><span>MISSION 05 · RESEARCH</span><h3>Adaptive Social Navigation</h3><p>Ongoing research into hyperdimensional multi-time state representations beyond conventional spatio-temporal learning.</p><div class="tech">Hyperdimensional computing · Social navigation</div></a>
+          <a class="mission mint-card" href="https://github.com/choity-tata/423" target="_blank" rel="noopener noreferrer"><div class="thumb"><img src="assets/projects/open-kart.jpg" alt="Open Kart Game thumbnail" onerror="this.src='assets/thumbnail-placeholder.svg'"><span>OPEN-KART.JPG</span></div><span>MISSION 06 · GAME</span><h3>Open Kart Game</h3><p>A kart racing game project focused on interactive gameplay and game development.</p><div class="tech">Game Development · Interactive Programming</div></a></div>
+      </article>
+      <article class="chapter achievements" id="wins" data-chapter="4">
+        <div class="chapter-tag">LEVEL 04 · ACHIEVEMENT UNLOCKED</div>
+        <div class="chapter-heading"><div><p>AWARDS + LEADERSHIP</p><h2>THE TROPHY<br>ROOM</h2></div><p>Competitive builds, science wins and leadership roles collected along the way.</p></div>
+        <div class="trophies"><div class="panel trophy"><b>04TH</b><h3>International Hackathon</h3><p>Competitive project-based challenge.</p></div><div class="panel trophy"><b>TOP 7</b><h3>HackCSB 2024</h3><p>Finalist after project presentation and competition.</p></div><div class="panel trophy"><b>01ST</b><h3>Environmental Olympiad</h3><p>National Champion · 2018 · organized through BUET.</p></div><div class="panel trophy"><b>2×</b><h3>Science Fair Champion</h3><p>Project-based wins in 2016 and 2018.</p></div></div>
+        <div class="leadership-strip"><span>BRAC University Community Service Club · Senior Executive · 6 events</span><span>BRAC University Computer Club · Executive Member</span><span>Holy Cross College Science Club · Club Officer</span><span>Sports Leader · 7 years combined</span></div>
+      </article>
+      <article class="chapter final" id="contact" data-chapter="5">
+        <div class="chapter-tag">FINAL LEVEL · OPEN TO OPPORTUNITIES</div>
+        <div class="final-card panel"><div class="guide-avatar p3" aria-hidden="true"></div><div><p>QUEST COMPLETE!</p><h2>LET’S BUILD<br><em>SOMETHING USEFUL.</em></h2><p>Choity is interested in AI, backend development and practical software projects.</p><a href="mailto:njc3981@gmail.com">NJC3981@GMAIL.COM <span>↗</span></a><div class="links"><a href="https://www.linkedin.com/in/nusrat-jahan-choity-2035a824a/" target="_blank" rel="noreferrer">LINKEDIN</a><a href="https://github.com/choitytata" target="_blank" rel="noreferrer">GITHUB</a><a href="tel:+8801767055105">CALL</a><a href="assets/Nusrat-Jahan-Choity-CV.docx" download>CV ↓</a></div></div></div>
+      </article>
+    </section>
+  </main>
+
+  <div class="mini-remi" id="miniRemi" role="button" aria-label="Show tech fact">🤖</div>
+  <div class="tech-fact" id="techFact" aria-live="polite"></div>
+  <button class="sound" id="soundBtn" aria-label="Toggle background game music" aria-pressed="false">SOUND: OFF</button>
+  <script src="app.js"></script>
+</body>
+</html>
